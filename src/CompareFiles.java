@@ -6,7 +6,7 @@ public class CompareFiles {
 
 	public static void main(String[] args) {
 		File MeSort = new File("/Users/RedSteele/Documents/School/Fall Quarter 2014/Comp 2370/Code/Programming Assignment 2/SortedFile.txt");
-		File YouSort = new File("/Users/RedSteele/Downloads/DFREwords/DFREwords0008192sorted.txt");
+		File YouSort = new File("/Users/RedSteele/Downloads/DFREwords/DFREwords0016384sorted.txt");
 		Scanner scanner1 = null, scanner2 = null;
 		try {
 			scanner1 = new Scanner(MeSort);

@@ -26,12 +26,38 @@ public class ArraySorter {
 					}
 				}
 				++i;
-				Collections.swap(alpha, i, j);
-				Collections.swap(beta , i, j);
+				String temp1, temp2;
+				temp1 = alpha.get(i);
+				temp2 = alpha.get(j);
+				alpha.set(i, temp2);
+				alpha.set(j, temp1);
+				
+				int temp3 = 0;
+				int temp4 = 0;
+				temp3 = beta.get(i);
+				temp4 = beta.get(j);
+				beta.set(i, temp4);
+				beta.set(j, temp3);
+				
+				//Collections.swap(alpha, i, j);
+				//Collections.swap(beta , i, j);
 			}
 		}
-		Collections.swap(alpha, i+1, stop);
-		Collections.swap(beta, i+1, stop);
+		String temp5, temp6;
+		temp5 = alpha.get(i+1);
+		temp6 = alpha.get(stop);
+		alpha.set(i+1, temp6);
+		alpha.set(stop, temp5);
+		
+		int temp7 = 0;
+		int temp8 = 0;
+		temp7 = beta.get(i+1);
+		temp8 = beta.get(stop);
+		beta.set(i+1, temp8);
+		beta.set(stop, temp7);
+		
+		//Collections.swap(alpha, i+1, stop);
+		//Collections.swap(beta, i+1, stop);
 		return i+1;
 	}
 }

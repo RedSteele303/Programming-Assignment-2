@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class Run {
 
 	public static void main(String[] args) {
-		CpuTimer cputimer = new CpuTimer();
-		File test = new File("/Users/RedSteele/Downloads/DFREwords/DFREwords0008192.txt");
+		File test = new File("/Users/RedSteele/Downloads/DFREwords/DFREwords0016384.txt");
 		TextReader.readFile(test);
+		CpuTimer cputimer = new CpuTimer();
 		ArrayList<String> sortedList = ArraySorter.quickSort(TextReader.getNames(), 0, TextReader.getNames().size()-1);
 		System.out.println(cputimer.getElapsedCpuTime());
 		FileWriter fwriter = null;
